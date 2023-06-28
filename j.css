@@ -310,6 +310,10 @@ ul li a:hover {
     color: #ffffff;
 }
 
+button a{
+    text-decoration: none;
+    color:var(--primary-color  );
+}
 
 .image {
     display: grid;
