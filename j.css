@@ -7,10 +7,13 @@
     transition: .2s linear;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
 
-    background: linear-gradient(100deg, #1CB5E0 0%, #000851 100%);
+    background: linear-gradient(90deg, #1CB5E0 0%, #000000 100%);
     background-size: 300% 300%;
     animation: color 9s linear infinite;
 
@@ -29,7 +32,6 @@ body {
         background-position: 0 50%;
     }
 }
-
 
 
 .wrapper {
@@ -152,6 +154,7 @@ h1 {
 }
 
 nav {
+    position:sticky;
     width: 100%;
     /* position:; */
     top: 0;
@@ -249,7 +252,7 @@ ul li a:hover {
 
 .subtitle {
     letter-spacing: 2px;
-    font-family: 'Bungee Spice', cursive;
+    font-family: 'Belanosima', sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 600;
     margin-bottom: .5rem;
@@ -289,6 +292,7 @@ ul li a:hover {
     border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
+    
 
 }
 
@@ -303,17 +307,18 @@ ul li a:hover {
 
 .portfolio {
     color: var(--primary-color);
+    /* text-decoration: none; */
 }
 
 .portfolio:hover {
     background-color: var(--primary-color-dark);
     color: #ffffff;
 }
-
 button a{
     text-decoration: none;
-    color:var(--primary-color);
+    color:var(--primary-color  );
 }
+
 
 .image {
     display: grid;
@@ -322,7 +327,7 @@ button a{
 }
 
 .image img {
-    width: min(20rem, 90%);
+    width: min(20rem,  100%);
     border-radius: 100%;
     transition: all 0.2s linear;
 }
