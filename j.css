@@ -44,6 +44,9 @@ body {
     text-transform: capitalize;
     
 }
+img{
+    filter: drop-shadow(10px 10px 150px rgb(255, 124, 0));
+}
 
 h1 {
     color: #ffffff;
@@ -334,7 +337,7 @@ button a{
 }
 
 .image img {
-    width: min(20rem,  100%);
+    width: min(24rem,  100%);
     border-radius: 100%;
     transition: all 0.2s linear;
 }
@@ -342,8 +345,8 @@ button a{
 
 @media(width < 750px) {
     nav .checkbox {
-        display: block;
-        display: none;
+        display:block;
+        /* display: none; */
     }
 
     ul {
@@ -378,7 +381,9 @@ button a{
         grid-area: 1/1/2/2;
         /* grid-template-columns: repeat(1,1fr); */
     }
-
+img{
+    filter: drop-shadow(10px 10px 100px rgba(197,144,50,255));
+}
     .action__btns {
         margin: auto;
     }
