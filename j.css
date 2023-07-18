@@ -254,19 +254,29 @@ ul li a:hover {
 
 .description {
     line-height: 1.5rem;
+    width:  auto;
     color: rgb(255, 255, 255);
     margin-bottom: 2rem;
     font-size: 30px;
-    animation: typing 2s steps(22), cursor .4s step-end infinite alternate ;
+    animation: cursor 1s step-start infinite, typing 3s steps(22);
     white-space:nowrap;
     overflow: hidden;
 
 }
+@keyframes cursor {
+	0%, 100% { 
+        border-right: 3px solid #ffffff;
+  }
+
+}
+
 @keyframes typing {
-    from{
+    0% { 
         width: 0;
     }
-    
+    100% { 
+        width: 20ch;
+    }
 }
 
 .action__btns {
@@ -374,6 +384,7 @@ img{
     .description {
         font-size: 30px;
     }
+    
 }
 
 .AA {
