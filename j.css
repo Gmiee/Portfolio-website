@@ -609,3 +609,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     justify-content: center;
     place-content: center;
 }
+@media screen and (max-width:460px) {
+    .music{
+        display: flex;
+        justify-content: center;
+        place-content: center;
+    }
+}
