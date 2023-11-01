@@ -227,6 +227,7 @@ ul li a:hover {
   margin: auto;
   padding: 1rem;
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(2, 1fr);
   gap: 4rem;
 }
@@ -263,7 +264,7 @@ ul li a:hover {
   color: rgb(255, 255, 255);
   margin-bottom: 2rem;
   font-size: 30px;
-  animation: cursor 1s step-start infinite, typing 3s steps(22);
+  animation: cursor 1s step-start infinite, typing 3s steps(21);
   white-space: nowrap;
   overflow: hidden;
 }
@@ -279,7 +280,7 @@ ul li a:hover {
     width: 0;
   }
   100% {
-    width: 22ch;
+    width: 21ch;
   }
 }
 
@@ -331,6 +332,15 @@ button a {
   width: min(17rem, 100%);
   border-radius: 100%;
   transition: all 0.2s linear;
+  animation: H-beat 1s alternate infinite;
+}
+@keyframes H-beat {
+  0%{
+    filter: drop-shadow(10px 10px 50px rgba(197, 144, 50, 255));
+  }
+  100%{
+    filter: drop-shadow(10px 10px 100px rgba(197, 144, 50, 255));
+  }
 }
 
 @media (width < 750px) {
@@ -370,6 +380,15 @@ button a {
   }
   img {
     filter: drop-shadow(10px 10px 100px rgba(197, 144, 50, 255));
+    animation: H-beat 1.5s infinite alternate;
+  }
+  @keyframes H-beat {
+    0%{
+      filter: drop-shadow(10px 10px 50px rgba(197, 144, 50, 255));
+    }
+    100%{
+      filter: drop-shadow(10px 10px 100px rgba(197, 144, 50, 255));
+    }
   }
   .action__btns {
     margin: auto;
