@@ -23,20 +23,6 @@ body {
   );
 }
 
-@keyframes color {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
-}
-
 .wrapper {
   margin: 10px auto;
   padding: 0 10% 10px;
@@ -660,6 +646,7 @@ input[type="button"].fcf-btn-block {
   position: absolute;
   top: 50%;
   left: 50%;
+  right: 35%;
   display: flex;
   z-index: 0;
   align-items: center;
@@ -672,6 +659,7 @@ input[type="button"].fcf-btn-block {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 25%;
   transform-origin: center top;
